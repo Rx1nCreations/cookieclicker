@@ -111,8 +111,8 @@ var App=typeof App==='undefined'?0:App;
 			" class="hoverer">
 			Mods/Addons
 			<div class="hoverable">
-			<a href="javascript: (function () {Game.LoadMod('https://cookiemonsterteam.github.io/CookieMonster/dist/CookieMonster.js');}());" id="linkVersionBeta">Cookie Monster</a>
-			<a href="javascript: (function () {Game.LoadMod('https://klattmose.github.io/CookieClicker/KlattmoseUtilities.js?v=2.16');}());" id="linkVersionOld">Klattmose's Utilities</a>
+			<a href="javascript:var autoclicker = setInterval(function(){ try { Game.lastClick -= 1000; document.getElementById('bigCookie').click(); } catch (err) { console.error('Stopping auto clicker'); clearInterval(autoclicker); } }, 1);" id="linkVersionBeta">Auto Clicker</a>
+			<a href="javascript:(function () {Game.LoadMod('https://cdn.jsdelivr.net/gh/Ancyker/Crustulum/Crustulum.js')}());" id="linkVersionOld">Crustulum</a>
 			<a href="https://sushi8756.github.io/Cookie-Clicker-Guide/" target="_blank">More Addons</a>
 			</div>
 		</div>
